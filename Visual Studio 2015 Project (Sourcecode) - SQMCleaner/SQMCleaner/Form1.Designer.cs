@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 108);
+            this.ClientSize = new System.Drawing.Size(462, 117);
             this.Controls.Add(this.DeleteAllCheckBox);
             this.Controls.Add(this.CleanButton);
             this.Controls.Add(this.SimpleDeleteTextBox);
@@ -115,6 +115,8 @@
             this.Controls.Add(this.PathButton);
             this.Controls.Add(this.PathTextBox);
             this.Controls.Add(this.PathLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "SQM Cleaner";
