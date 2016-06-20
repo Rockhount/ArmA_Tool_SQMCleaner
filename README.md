@@ -7,7 +7,7 @@ If you use the attributes in the ArmA 3 3d editor, then you could damage your mi
 Sourcecode, Binaries and the documentation of the tool.
 
 ##Aim
-If you create a new mission whith the ArmA 3 3d Editor and with mods like "ACE" or "3den Enhanced" loaded, then those mods will blow up your mission.sqm file with attributes and scriptcommands, which nobody needs. This tool is aimed to cleanup the mission.sqm file from those unneeded attributes and scriptcommands.
+If you create a new mission with the ArmA 3 3d Editor and with mods like "ACE" or "3den Enhanced" loaded, then those mods will blow up your mission.sqm file with attributes and scriptcommands, which nobody needs. This tool is aimed to cleanup the mission.sqm file from those unneeded attributes and scriptcommands.
 
 ##Achtung
 Wenn Sie die Attribute im ArmA 3 3d Editor verwenden, dann könnten Sie Ihre Mission durch das Benutzen dieses Tools beschädigen.
