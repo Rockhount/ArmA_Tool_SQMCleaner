@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SQMCleaner
 {
-    public partial class Form1 : Form
+    public sealed partial class Form1 : Form
     {
         public Form1()
         {
@@ -101,7 +101,7 @@ namespace SQMCleaner
                         {
                             DeleteFromIndex = NextCustomAttributeIndex;
                             DeleteToIndex = GetTextLineIndex(NextCustomAttributeIndex, "nAttributes=", string.Empty);
-                            if (RAWTextLines[NextCustomAttributeIndex].StartsWith("class"))
+                            if (RAWTextLines[NextCustomAttributeIndex].StartsWith("class", StringComparison.InvariantCultureIgnoreCase))
                             {
                                 CleanUpLines(DeleteFromIndex, DeleteToIndex + 2);
                             }
