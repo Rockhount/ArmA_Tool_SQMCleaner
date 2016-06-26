@@ -101,7 +101,14 @@ namespace SQMCleaner
                         {
                             DeleteFromIndex = NextCustomAttributeIndex;
                             DeleteToIndex = GetTextLineIndex(NextCustomAttributeIndex, "nAttributes=", string.Empty);
-                            CleanUpLines(DeleteFromIndex, DeleteToIndex + 1);
+                            if (RAWTextLines[NextCustomAttributeIndex].StartsWith("class"))
+                            {
+                                CleanUpLines(DeleteFromIndex, DeleteToIndex + 2);
+                            }
+                            else
+                            {
+                                CleanUpLines(DeleteFromIndex, DeleteToIndex + 1);
+                            }
                         }
                         NextCustomAttributeIndex = GetTextLineIndex(DeleteToIndex, "class CustomAttributes", string.Empty);
                     }
